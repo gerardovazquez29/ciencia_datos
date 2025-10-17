@@ -1,5 +1,29 @@
 import pandas as pd
 
+serie = pd.Series([10,20,30], index=['a','b','c'], name='ventas')
+print(serie)
+""" 
+a    10
+b    20
+c    30
+Name: ventas, dtype: int64 
+"""
+print('-'*30)
+
+df = pd.DataFrame({
+    'nombre': ['Ana','Luis','Marta'],
+    'edad': [23,31,29],
+    'ciudad': ['CDMX','GDL','MTY']
+})
+print(df)
+"""   
+nombre  edad ciudad
+0    Ana    23   CDMX
+1   Luis    31    GDL
+2  Marta    29    MTY 
+"""
+print('-'*30)
+
 df_empleados = pd.DataFrame({
     'nombre': ['Ana','Luis','Carlos'],
     'edad': [30,25,40]
@@ -37,3 +61,4 @@ index_df = df_empleados.index
 print(index_df) # RangeIndex(start=0, stop=3, step=1)
 
 print('-'*30)
+
