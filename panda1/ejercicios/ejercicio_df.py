@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('C:\\Users\\T-City\\OneDrive\\Desktop\\ciencia_datos\\panda1\\Precipitaciones.csv')
+df = pd.read_csv('C:\\Users\\T-City\\OneDrive\\Desktop\\ciencia_datos\\panda1\\ejercicios\\Precipitaciones.csv')
 print(df)
 print('-'*30)
 print(type(df)) # <class 'pandas.core.frame.DataFrame'>
